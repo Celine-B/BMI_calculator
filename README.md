@@ -1,6 +1,6 @@
 # BMI calculator and weight categories
 
-This README file provides supporting information for the shiny app “BMI calculator”.
+This README file provides supporting information for the shiny app “BMI calculator” (link: https://lineb4jhu.shinyapps.io/BMI_calculator/).
 
 ## 1. Background
 This project is part of an assignment for the course Developping data product on Coursera. 
