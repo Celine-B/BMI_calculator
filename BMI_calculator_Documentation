@@ -1,0 +1,30 @@
+Documentation:
+
+This Shiny app is a simple calculator that provides the Body Mass Index (BMI) and the corresponding weight category for adults 20 years and older. 
+
+On the left panel, the user is invited to use the sliders to enter his height (in meters) and weight (in kilograms). 
+
+Note that the application uses the International system of units (meters and kilograms): 
+- 1 inch = 0.0254 meter 
+- 1 pound = 0.454 kilograms
+
+
+The server will use the 2 input values to calculate:
+-	The BMI score (“bmi”)
+-	The weight category (“bmi_status”)
+
+The BMI function takes two arguments, height and weight, and returns a numerical value based on a simple formula:
+BMI = function(height,weight){
+        return(weight/(height)^2)
+}
+
+The weight category (“bmi_status”) will use the calculated BMI score (“bmi”) to indicate the health status according to the following categories:
+BMI Categories:
+- Underweight = <18.5
+- Normal weight = 18.5–24.9
+- Overweight = 25–29.9
+- Obesity = BMI of 30 or greater
+
+
+The ui code (ui.R) defines the user interface which is how the application will look. We will have to enter 2 values: the height in meter and the weight in kilogram. Those 2 inputs values will be used to calculate the BMI score ("bmi") and the associated health status ("bmi_status") that will be displayed on the main panel
+The server code (server.R) defines the server logic required to calculate the BMI score ("bmi") and the associated weight category ("bmi_status")
