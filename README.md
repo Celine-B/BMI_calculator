@@ -56,6 +56,7 @@ The server code (server.R) defines the server logic required to calculate the BM
 
 ## 3. Directions on how to use this app in RStudio or on Shiny servers
 Option 1: Direct link:  https://lineb4jhu.shinyapps.io/BMI_calculator/
+
 Option 2: Download the server.R and ui.R files and place them in a directory named 'BMI_calculator'. Open an R session and set the working directory to the folder that contains the directory 'BMI_calculator'. Then run the following commands:
 library(shiny)
-runApp('my_first_shiny')
+runApp('BMI_calculator')
